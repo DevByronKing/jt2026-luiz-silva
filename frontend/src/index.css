@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== BODY THEME COLORS ===== */
+/* We use explicit .dark/.light selectors instead of Tailwind dark: variant
+   because the PostCSS pipeline is compiling dark: as @media query instead of class */
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+html.dark body {
+  background-color: #050B1A;
+  color: #F1F5F9;
+}
+
+html.light body,
+html:not(.dark) body {
+  background-color: #F8FAFC;
+  color: #0F172A;
+}
+
+/* ===== THEMED WRAPPER ===== */
+/* Main app wrapper — mirrors the body background */
+.themed-wrapper {
+  min-height: 100vh;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+html.dark .themed-wrapper {
+  background-color: #050B1A;
+  color: #F1F5F9;
+}
+
+html.light .themed-wrapper,
+html:not(.dark) .themed-wrapper {
+  background-color: #F8FAFC;
+  color: #0F172A;
+}
+
+/* ===== HEADER ===== */
+.themed-header {
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+html.dark .themed-header {
+  background-color: rgba(0, 20, 61, 0.92);
+  border-color: rgba(0, 85, 255, 0.2);
+}
+
+html.light .themed-header,
+html:not(.dark) .themed-header {
+  background-color: rgba(255, 255, 255, 0.92);
+  border-color: #E2E8F0;
+}
+
+/* ===== GLASS PANELS ===== */
+.glass-panel {
+  backdrop-filter: blur(16px);
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+html.dark .glass-panel {
+  background: rgba(10, 21, 48, 0.85);
+  border: 1px solid rgba(0, 85, 255, 0.25);
+  box-shadow: none;
+}
+
+html.light .glass-panel,
+html:not(.dark) .glass-panel {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 10px 30px -5px rgba(0, 20, 61, 0.06);
+}
+
+/* ===== GLASS CARDS ===== */
+.glass-card {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html.dark .glass-card {
+  background: linear-gradient(135deg, rgba(11, 23, 54, 0.9) 0%, rgba(7, 15, 38, 0.98) 100%);
+  border: 1px solid rgba(0, 85, 255, 0.22);
+}
+
+html.dark .glass-card:hover {
+  border-color: rgba(0, 85, 255, 0.55);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(0, 85, 255, 0.35);
+}
+
+html.light .glass-card,
+html:not(.dark) .glass-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 15px -2px rgba(0, 20, 61, 0.04);
+}
+
+html.light .glass-card:hover,
+html:not(.dark) .glass-card:hover {
+  border-color: rgba(0, 85, 255, 0.45);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px -5px rgba(0, 85, 255, 0.12);
+}
+
+/* ===== THEMED TEXT ===== */
+html.dark .text-themed { color: #F1F5F9; }
+html.light .text-themed,
+html:not(.dark) .text-themed { color: #0F172A; }
+
+html.dark .text-themed-muted { color: #94A3B8; }
+html.light .text-themed-muted,
+html:not(.dark) .text-themed-muted { color: #64748B; }
+
+/* ===== THEMED BACKGROUNDS ===== */
+html.dark .bg-themed-inner { background-color: #00143D; }
+html.light .bg-themed-inner,
+html:not(.dark) .bg-themed-inner { background-color: #F8FAFC; }
+
+html.dark .bg-themed-surface { background-color: #0A1530; }
+html.light .bg-themed-surface,
+html:not(.dark) .bg-themed-surface { background-color: #FFFFFF; }
+
+html.dark .border-themed { border-color: rgba(0, 85, 255, 0.25); }
+html.light .border-themed,
+html:not(.dark) .border-themed { border-color: #E2E8F0; }
+
+/* ===== SLIDERS ===== */
+.slider-seazone::-webkit-slider-thumb {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #0055FF;
+  cursor: pointer;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 0 12px rgba(0, 85, 255, 0.7);
+  transition: transform 0.15s;
+}
+
+.slider-seazone::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+/* ===== GLOW EFFECTS ===== */
+html.dark .glow-coral {
+  box-shadow: 0 0 25px rgba(252, 96, 88, 0.25);
+}
+
+html.dark .glow-blue {
+  box-shadow: 0 0 25px rgba(0, 85, 255, 0.35);
+}
+
+html.light .glow-coral,
+html:not(.dark) .glow-coral {
+  box-shadow: 0 8px 25px rgba(252, 96, 88, 0.12);
+}
+
+html.light .glow-blue,
+html:not(.dark) .glow-blue {
+  box-shadow: 0 8px 25px rgba(0, 85, 255, 0.14);
+}
+
+/* ===== SCROLLBARS ===== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #050B1A;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+}
+
+html.light ::-webkit-scrollbar-track,
+html:not(.dark) ::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+html.light ::-webkit-scrollbar-thumb,
+html:not(.dark) ::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
