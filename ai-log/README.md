@@ -13,13 +13,10 @@ Esta pasta documenta **a sessão completa de ponta a ponta** do desenvolvimento 
 
 ```
 ai-log/
-├── README.md                                      <- Índice da metodologia e framework de IA
-├── 01_prompt_engineering_and_data_pipeline.md     <- Ingestão das 5 bases, deduplicação temporal e filtros
-├── 02_hypothesis_testing_and_thesis_refutation.md <- Modelagem quantitativa e refutação matemática da tese
-├── 03_financial_engine_and_fullstack_development.md <- Desenvolvimento do simulador, curvas de sensibilidade e DRE
-├── 04_ai_copilot_predictive_and_supabase_persistence.md <- AI Copilot, diagnósticos preditivos e banco de dados
-├── 05_production_audit_and_design_system_refinement.md <- Theming Seazone, depuração de CSS e auditoria de build
-└── session_transcript_complete.json              <- Transcrição cronológica completa da sessão (Machine-Readable)
+├── ai_log_completo.md                <- Histórico integral consolidado em Markdown (.md)
+├── ai_log_completo.txt               <- Histórico integral consolidado em texto puro (.txt)
+├── session_transcript_complete.json  <- Transcrição cronológica em JSON estruturado (.json)
+└── README.md                         <- Metodologia e padrões de engenharia de prompt aplicados
 ```
 
 ---
