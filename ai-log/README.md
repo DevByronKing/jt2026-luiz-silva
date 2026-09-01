@@ -13,9 +13,7 @@ Esta pasta documenta **a sessão completa de ponta a ponta** do desenvolvimento 
 
 ```
 ai-log/
-├── ai_log_completo.md                <- Histórico integral consolidado em Markdown (.md)
 ├── ai_log_completo.txt               <- Histórico integral consolidado em texto puro (.txt)
-├── session_transcript_complete.json  <- Transcrição cronológica em JSON estruturado (.json)
 └── README.md                         <- Metodologia e padrões de engenharia de prompt aplicados
 ```
 
