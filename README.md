@@ -116,9 +116,7 @@ A solução foi construída em arquitetura desacoplada e modular:
 │           ├── aiAdvisor.js        <- Motor de diagnósticos de elasticidade e dossiês
 │           └── supabaseClient.js   <- Cliente de integração Supabase (PostgreSQL)
 ├── ai-log/
-│   ├── ai_log_completo.md          <- Histórico integral consolidado em Markdown (.md)
 │   ├── ai_log_completo.txt         <- Histórico integral consolidado em texto puro (.txt)
-│   ├── session_transcript_complete.json <- Transcrição cronológica em JSON estruturado (.json)
 │   └── README.md                   <- Metodologia e padrões de prompt engineering aplicados
 ├── supabase_schema.sql             <- Script SQL completo com tabelas e RLS
 └── data/                           <- Bases CSV fornecidas no desafio
