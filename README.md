@@ -1,4 +1,4 @@
-**Link do Vídeo:** [INSERIR LINK DO GOOGLE DRIVE AQUI COM ACESSO PÚBLICO]
+**Link do Vídeo:** https://drive.google.com/file/d/1gUJFBAfQUDgwQy2QmT591R4N_YaHS5zv/view?usp=sharing
 
 # Seazone OS — Relatório Executivo de Recomendação de Investimento Imobiliário & Plataforma de Decisão (Itapema/SC)
 
